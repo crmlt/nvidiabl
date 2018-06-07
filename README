@@ -83,20 +83,20 @@ _________________________________________________________
 In order to redirect the brightness control Fn keys to nvidiabl you have to disable the
 brightness feature of the thinkpad acpi module.
 
-Simple create the file
+Simple create the file:
 
 /etc/modprobe.d/thinkpad.conf
 
-and add the line
+and add the line:
 
 options thinkpad_acpi brightness_enable=0
 
-Then:
+then:
 
 sudo rmmod thinkpad_acpi
 sudo modprobe nividabl
 sudo modprobe thinkpad_acpi
 
-Instead of a modprobe option you may reconfigure the boot loader and add:
+Instead of a modprobe option you may reconfigure the boot loader:
 
 thinkpad_acpi.brightness_enable=0
