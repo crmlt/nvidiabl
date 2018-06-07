@@ -1,7 +1,7 @@
 Little Linux driver based on Andy Wingo's, guillaumezin and madsherlock work that enables
 the control of laptop backlight connected to NVIDIA chip using the /sys/class/backlight interface.
 
-This fork supports systems with linux kernel 4.0.0+ above.
+This fork supports systems with linux kernel >= 4.0.0.
 
 Compile and install
 ____________________
@@ -24,7 +24,7 @@ acpi_backlight=video
 acpi_backlight=vendor
 acpi_backlight=native
 
-It hhould be added to the GRUB_CMDLINE_LINUX_DEFAULT line of /etc/default/grub.
+It should be added to the GRUB_CMDLINE_LINUX_DEFAULT line of /etc/default/grub.
 
 Uninstall driver:
 ______________
