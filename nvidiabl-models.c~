@@ -258,7 +258,7 @@ static int nv5x_map(struct driver_data *dd)
 		if (!smartdimmer1)
 			return -ENXIO;
 
-		reg_addr2  = bar_start + dd->reg_offset2;
+		reg_addr2  = bar_start + dd->reg_offset1;
 		/* Sanity check 2: Address should not exceed the PCI BAR */
 		if (reg_addr2 + dd->reg_size - 1 > bar_end)
 			return -ENODEV;
