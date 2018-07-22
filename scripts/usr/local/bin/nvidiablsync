@@ -21,7 +21,7 @@ brightness() {
 }
 
 actual_brightness() {
-    read -r l < $path/actual_brightness
+    read l < $path/actual_brightness
     echo $l
 }
 
